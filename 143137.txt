@@ -1,0 +1,83 @@
+git init - Креира нов Гит репозиториум.
+
+git status - тековната работна состојба приказ на сите измени 
+
+git add README.md - додава дадтотека со име README.md на Git 
+потоа со git commit -m "Initial commit" промените се зачувуваат со порака 
+initial commit. 
+
+
+git config --global user.email "btarchugovski@gmail.com"
+git config --global user.name "Boshko Tarchugovski"
+Со овие команди се врши идентификација на корисникот кој ги прави 
+промените во git репозиториумот. 
+
+git log прикажување на историјата на промени во репозиториумот. 
+
+git commit -m "Add java class" сите промени на Git 
+со командата git add со порака "Add java class"
+
+git add SILab1.java додавање на нова датотека со име SILab1.java
+
+git push- прикачување на сите локални промени во одалечениот Git репозиториум.
+
+git push -- set-upstream origin master прикачување на сите промени на гланата гранка мастер.
+
+
+git checkout -b "bug1" креирање на нова гранка со име bug1 во локалниот репозиториум и се префрла 
+активноста на неа. 
+
+git checkout master-префрлање активност на гранката мастер
+
+
+
+git branch bug2 креирање на нова гранка со име bug2 во локалниот репозиториум но 
+не ја префрла активноста на неа 
+
+git branch bug3 креирање на нова гранка со име bug3 во локалниот репозиториум но 
+не ја префрла активноста на неа 
+
+
+git checkout master префрлање на активноста на главната гранка 
+
+
+git add SILab1.javа извршени промени во кодот на датотеката на SILab1.javа и прокачување на Git
+
+
+git commit -m "Fix wrong loop for reading" промената е зачувана со пораката Fix wrong loop for reading
+
+
+git checkout master префрлање на активноста на главната гранка 
+
+
+git checkout bug2 префрлање на активноста на bug2 гранка 
+
+git add SILab1.java -извршени промени во кодот на датотеката на SILab1.javа и прокачување на Git
+
+git commit -m "Fix wrong condition in filterOddNumbers" -промената е зачувана со пораката "Fix wrong condition in filterOddNumbers"
+
+
+git checkout master префрлање на активноста на главната гранка 
+
+git checkout bug3 креирање на нова гранка со име bug3 во локалниот репозиториум и се префрла 
+активноста на неа.
+
+git add SILab1.java извршени промени во кодот на датотеката на SILab1.javа и прокачување на Git
+
+git commit -m -промената е зачувана со пораката "Fix method sumEvenNumbers" 
+
+git push --all origin се испраќа содржината на сите гранки во локалниот репозиториум на серверт
+
+git merge bug1 git merge bug2 git merge bug3 обединување на гранките 
+
+git fetch --all Синхронизација на локалниот работен репозиториум со секоја гранка на репозиториумот 
+
+git checkout bug3 префрлање на активноста на bug3 гранка 
+
+git rebase master тековната гранка ја поврзува со главната гранка 
+
+git checkout master префрлање на активноста на главната гранка 
+
+git merge bug3 спојување на гранката bug3 со тековната активна гранка 
+
+git fetch --all Синхронизација на локалниот работен репозиториум со секоја гранка на репозиториумот 
