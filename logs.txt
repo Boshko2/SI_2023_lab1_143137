@@ -1,0 +1,215 @@
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137
+$ git init
+Initialized empty Git repository in C:/SI_2023_lab1_143137/.git/
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ ^[[200~
+bash: $'\E[200~': command not found
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git remote add origin https://github.com/Boshko2/SI_2023_lab1_143137.git
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git add README.md
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git commit -m "Initial commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Tosho@DESKTOP-90FL4IO.(none)')
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ ^C
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git config --global user.email "btarchugovski@^C
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git config --global user.email "btarchugovski@gmail.com"
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git config --global user.name "Boshko Tarchugovski"
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 539248b] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git log
+commit 539248b58f63481d8ce28755bbed93459bf4a971 (HEAD -> master)
+Author: Boshko Tarchugovski <btarchugovski@gmail.com>
+Date:   Thu Apr 6 17:00:09 2023 +0200
+
+    Initial commit
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ https://github.com/Boshko2/SI_2023_lab1_143137.git
+bash: https://github.com/Boshko2/SI_2023_lab1_143137.git: No such file or directory
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git commit -m "Add java class"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SILab1.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git add SILab1.java
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git commit -m "Add java class"
+[master 735b919] Add java class
+ 1 file changed, 41 insertions(+)
+ create mode 100644 SILab1.java
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git push -- set-upstream origin master
+error: src refspec origin does not match any
+error: failed to push some refs to 'set-upstream'
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git push --set-upstream origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 859 bytes | 859.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Boshko2/SI_2023_lab1_143137.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git checkout -b "bug1"
+Switched to a new branch 'bug1'
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (bug1)
+$ git checkout master
+Switched to branch 'master'
+M       SILab1.java
+Your branch is up to date with 'origin/master'.
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git branch bug2
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git branch bug3
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git checkout bug2
+Switched to branch 'bug2'
+M       SILab1.java
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (bug2)
+$ git checkout master
+Switched to branch 'master'
+M       SILab1.java
+Your branch is up to date with 'origin/master'.
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+M       SILab1.java
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (bug1)
+$ git add SILab1.java
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (bug1)
+$ git status
+On branch bug1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   SILab1.java
+
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (bug1)
+$ git commit -m "Fix wrong loop for reading"
+[bug1 581f3c0] Fix wrong loop for reading
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (bug1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (master)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (bug2)
+$ git add SILab1.java
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (bug2)
+$ git status
+On branch bug2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   SILab1.java
+
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (bug2)
+$ git commit -m "Fix wrong condition in filterOddNumbers"
+[bug2 901ba94] Fix wrong condition in filterOddNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Tosho@DESKTOP-90FL4IO MINGW64 /c/SI_2023_lab1_143137 (bug2)
+$ git checkout master
+
